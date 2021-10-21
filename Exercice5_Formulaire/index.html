@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Formulaire exercice 5</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+            <form action="index.html" method="post">
+                <div class="headerForm">
+                    <h1>SuperQuiz</h1>
+                </div>
+                <div class="containerPrincipal">   
+                    <fieldset>
+                        <legend>Données personnelles</legend>
+                        <table>
+                            <tr>
+                                <td><label for="name">Nom :</label></td>
+                                <td><Input type="text" id="name" name="user_name" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="first_name">Prénom :</label></td>
+                                <td><input type="text" id="first_name" name="user_first_name" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="age">Age :</label></td>
+                                <td><input type="number" id="age" name="user_age" min="16" max="99" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="anniversaire"> Date anniversaire :</label></td>
+                                <td><input type="text" id="dateAnniversaire" name="user_anniversaire" pattern="[0123][0-9]/[01][0-9]" required/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label for="groupe">Votre groupe :</label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="groupe1" name="groupe1" value="1"/>
+                                    <label for="groupe1">1</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="groupe2" name="groupe2" value="2"/>
+                                    <label for="groupe2">2</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Question1</legend>
+                        <p>Parmi les mots suivants indiquer lesquels sont des balises</p>
+                        <div id="block_Btn_Radio">
+                            <div>
+                                <input type="checkbox" name="btn_head" id="btn_head" value="head"/>
+                                <label for="btn_head">head</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="btn_style" id="btn_style" value="style"/>
+                                <label for="btn_style">style</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="btn_margin" id="btn_margin" value="margin"/>
+                                <label for="btn_margin">margin</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="btn_href" id="btn_href" value="href"/>
+                                <label for="btn_href">href</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="btn_section" id="btn_section" value="section"/>
+                                <label for="btn_section">section</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+
+                    <fieldset>
+                        <legend>Question2</legend>
+                        <p>Choisissez la syntaxe correcte pour créer un hyperlien</p>
+                        <select name="hyperlien">
+                            <option value="">-----Choisir une option-----</option>
+                            <option value=""><pre>&lt;a name="asty.html">Centre Asty-Moulin&lt;/a></pre>
+                            </option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="footerForm">
+                    <div class="blockBtnSubmit">
+                        <input type="submit" value="RAZ">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </div>
+            </form>
+    </body>
+</html>
