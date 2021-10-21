@@ -55,14 +55,14 @@ input{
 }
 
 .blockBtnSubmit{
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 
 /* CSS CONTAINER */
 
 .containerPrincipal{
-    width: 70%;
+    width: 95%;
     background-color: #effdfc;
     color: #c3635e;
 }
