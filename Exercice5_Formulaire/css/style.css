@@ -1,3 +1,5 @@
+/* CSS GENERAL */
+
 *{
     padding: 0px;
     margin: 0px;
@@ -5,6 +7,7 @@
 
 body{
     background-color:  #8c8c8c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 form{
@@ -14,32 +17,85 @@ form{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
 }
 
-.containerPrincipal{
-    width: 70%;
-    background-color: #effdfc;
-}
-
-#titre{
-    width: 100%;
-    height: 50px;
-    background-color: #0b4d81;
-    padding-left: 20px;
+table{
+    color: #c3635e;
+    margin: 20px;
 }
 
 fieldset{
     width: 40%;
+    border-radius: 10px;
 }
 
-#block_Btn_Radio{
-    display: flex;
-    flex-direction: column;
+legend{
+    font-family: 'Festive', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: #445565 1px 0 10px;
 }
-#block_Btn_Radio:nth-child(){
+
+input{
+    height: 1.5em;
+}
+
+/* CSS INPUT NAME */
+
+.inputName:required{
+    background-color: orange;
+}
+
+/* CSS BTN */
+
+.btn{
+    height: 2em;
+    width: 80px;
+}
+
+.blockBtnSubmit{
+    margin-right: 20px;
+}
+
+
+/* CSS CONTAINER */
+
+.containerPrincipal{
+    width: 70%;
+    background-color: #effdfc;
+    color: #c3635e;
+}
+
+.containerDonnees fieldset{
+    margin: 0 auto;
+    height: 270px;
     display: flex;
+    align-items: center;
+}
+
+.containerQuestions{
+    display: flex;
+    justify-content: center;
     flex-direction: row;
+    align-items: center;
 }
+
+.containerQuestions fieldset{
+    margin: 20px;
+    height: 270px;
+}
+
+.question2 p, select{
+    margin: 15px;
+}
+.containerGroupe td{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+/* CSS HEADER FORM */
+
 .headerForm{
     width: 100%;
     height: 50px;
@@ -51,6 +107,8 @@ fieldset{
     padding-left:20px;
 }
 
+/* CSS FOOTER FORM */
+
 .footerForm{
     width: 100%;
     height: 50px;
@@ -61,6 +119,21 @@ fieldset{
     color: #ebebeb;
 }
 
-.blockBtnSubmit{
-    margin-right: 20px;
+/* CSS BTN RADIO */
+
+.block_Btn_Radio{
+    display: flex;
+    flex-direction: column;
+}
+.block_Btn_Radio:nth-child(){
+    display: flex;
+    flex-direction: row;
+}
+
+.block_Btn_Radio p{
+    margin: 15px;
+}  
+
+.block_Btn_Radio div{
+    margin-left: 15px;
 }
